@@ -1,15 +1,15 @@
 %define upstream_name    Champlain
-%define upstream_version 0.11
+%define upstream_version 0.14
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Map rendering canvas
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/Champlain
+Source0:    https://cpan.metacpan.org/authors/id/X/XA/XAOC/Champlain-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Clutter)
