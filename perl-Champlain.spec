@@ -1,15 +1,13 @@
 %define upstream_name    Champlain
-%define upstream_version 0.14
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    0.14
+Release:    2
 
 Summary:    Map rendering canvas
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/Champlain
-Source0:    https://cpan.metacpan.org/authors/id/X/XA/XAOC/Champlain-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/X/XA/XAOC/Champlain-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Clutter)
@@ -29,7 +27,7 @@ For more information about libchamplain see: the
 http://projects.gnome.org/libchamplain/ manpage.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
